@@ -12,7 +12,7 @@ String userName = scanner.nextLine();
 System.out.println("Ievadiet paroli");
 String password = scanner.nextLine();
 
-if("Asnate".equals(userName) && (password.equals(password))){
+if("Asnate".equals(userName) && ("Muca".equals(password))){
     System.out.println("Esat sveicináts/a!");
         }else {
     System.out.println("Nepareizs lietotájvárds vai parole");

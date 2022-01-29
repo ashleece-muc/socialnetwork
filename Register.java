@@ -20,8 +20,8 @@ registration.setVárds(Várds);
             System.out.println("Ievadi savu paroli, parole jábut vismaz 8 simboliem");
             String parole = scanner.nextLine();
             registration.setParole(parole);
-            if (Objects.equals(parole,epasts)){
-                System.out.println("Esi veiksmígi registréts");
+            if (Objects.equals(parole,registration.getParole())){
+                System.out.println("Cien, " + registration.getVárds() +" "+ registration.getUzvárds() +", Esi veiksmígi registréts");
 
             }else {
                 System.out.println("Párbaudi ievadíto informáciju!");
@@ -44,35 +44,49 @@ class Registration {
     private String parole;
 
 
-    public String getVárds() {
+    public String getVárds()
+    {
+        Várds="Asnáte";
         return Várds;
     }
 
-    public void setVárds(String várds) {
+    public void setVárds(String várds)
+    {
         Várds = várds;
     }
 
-    public String getUzvárds() {
+    public String getUzvárds()
+    {
+        Uzvárds = "Muceniece";
         return Uzvárds;
     }
 
-    public void setUzvárds(String uzvárds) {
+    public void setUzvárds(String uzvárds)
+    {
         Uzvárds = uzvárds;
     }
 
-    public String getEpasts() {
+    public String getEpasts()
+    {
+        epasts = "test@test.lv";
         return epasts;
     }
 
-    public void setEpasts(String epasts) {
+    public void setEpasts(String epasts)
+    {
+        // TODO: 29.01.2022
         this.epasts = epasts;
     }
 
-    public String getParole() {
+    public String getParole()
+    {
+        parole = "entropija123";
         return parole;
     }
 
-    public void setParole(String parole) {
+    public void setParole(String parole)
+    {
+        // TODO: 29.01.2022
         this.parole = parole;
     }
 }
